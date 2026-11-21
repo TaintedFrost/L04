@@ -5,9 +5,9 @@ def is_even(n):
 
 def rectangle_area(width, height):
     """area of a rectangle."""
-    return width * height  # Fixed: was +, should be *
+    return width * height
 
 
 def double(n):
     """twice the number n"""
-    return n + n  # Fixed: was + 2, should be + n
+    return n * 2

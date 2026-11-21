@@ -9,36 +9,15 @@ from exercise1 import *
 
 
 # bug report 1
-def is_even(n):
-    """true for even numbers"""
-    return n % 2 == 0
-
-
-def rectangle_area(width, height):
-    """area of a rectangle."""
-    return width * height  # Fixed: was +, should be *
-
-
-def double(n):
-    """twice the number n"""
-    return n + n  # Fixed: was + 2, should be + n
+def test_r1_is_even_4():
+    assert is_even(4) == True
 
 
 # bug report 2
-def is_even(n):
-    """true for even numbers"""
-    return n % 2 == 1
-
-
-def rectangle_area(width, height):
-    """area of a rectangle."""
-    return width * height
-
-
-def double(n):
-    """twice the number n"""
-    return n + 2
+def test_r2_rectangle_area_4_5():
+    assert rectangle_area(4, 5) == 20
 
 
 # bug report 3
-double(5)  # returns 7, but should return 10
+def test_r3_double_5():
+    assert double(5) == 10
