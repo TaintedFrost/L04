@@ -15,7 +15,7 @@ def test_r1_is_passing_5():
 
 # bug report 2
 def test_r2_is_valid_password_8_characters():
-    assert is_valid_password("abcdefgh") == True
+    assert is_valid_password("abcdefg1") == True
 
 
 # bug report 3

@@ -7,7 +7,7 @@ Fix: return grade >= 5
 
 Line: 8
 Problem: The docstring says "at least 8 characters", which means >= 8, but the code uses > 8, so a password with exactly 8 characters is rejected.
-Example: is_valid_password("abcdefgh") returns False, expected True.
+Example: is_valid_password("abcdefg1") returns False, expected True.
 Fix: return len(password) >= 8 and any(c.isdigit() for c in password)
 
 Line: 12
